@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F27B06992623196700188943 /* QuickCallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B06982623196700188943 /* QuickCallApp.swift */; };
+		F27B069B2623196700188943 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B069A2623196700188943 /* ContentView.swift */; };
+		F27B069D2623196800188943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F27B069C2623196800188943 /* Assets.xcassets */; };
+		F27B06A02623196800188943 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F27B069F2623196800188943 /* Preview Assets.xcassets */; };
+		F27B06A22623196800188943 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B06A12623196800188943 /* Persistence.swift */; };
+		F27B06A52623196800188943 /* QuickCall.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F27B06A32623196800188943 /* QuickCall.xcdatamodeld */; };
+		F27B06B02623196800188943 /* QuickCallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B06AF2623196800188943 /* QuickCallTests.swift */; };
+		F27B06BB2623196800188943 /* QuickCallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B06BA2623196800188943 /* QuickCallUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F27B06AC2623196800188943 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F27B068D2623196700188943 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F27B06942623196700188943;
+			remoteInfo = QuickCall;
+		};
+		F27B06B72623196800188943 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F27B068D2623196700188943 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F27B06942623196700188943;
+			remoteInfo = QuickCall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F27B06952623196700188943 /* QuickCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F27B06982623196700188943 /* QuickCallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCallApp.swift; sourceTree = "<group>"; };
+		F27B069A2623196700188943 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F27B069C2623196800188943 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F27B069F2623196800188943 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F27B06A12623196800188943 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		F27B06A42623196800188943 /* QuickCall.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuickCall.xcdatamodel; sourceTree = "<group>"; };
+		F27B06A62623196800188943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F27B06AB2623196800188943 /* QuickCallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickCallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F27B06AF2623196800188943 /* QuickCallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCallTests.swift; sourceTree = "<group>"; };
+		F27B06B12623196800188943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F27B06B62623196800188943 /* QuickCallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickCallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F27B06BA2623196800188943 /* QuickCallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCallUITests.swift; sourceTree = "<group>"; };
+		F27B06BC2623196800188943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F27B06922623196700188943 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F27B06A82623196800188943 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F27B06B32623196800188943 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F27B068C2623196700188943 = {
+			isa = PBXGroup;
+			children = (
+				F27B06972623196700188943 /* QuickCall */,
+				F27B06AE2623196800188943 /* QuickCallTests */,
+				F27B06B92623196800188943 /* QuickCallUITests */,
+				F27B06962623196700188943 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F27B06962623196700188943 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F27B06952623196700188943 /* QuickCall.app */,
+				F27B06AB2623196800188943 /* QuickCallTests.xctest */,
+				F27B06B62623196800188943 /* QuickCallUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F27B06972623196700188943 /* QuickCall */ = {
+			isa = PBXGroup;
+			children = (
+				F27B06982623196700188943 /* QuickCallApp.swift */,
+				F27B069A2623196700188943 /* ContentView.swift */,
+				F27B069C2623196800188943 /* Assets.xcassets */,
+				F27B06A12623196800188943 /* Persistence.swift */,
+				F27B06A62623196800188943 /* Info.plist */,
+				F27B06A32623196800188943 /* QuickCall.xcdatamodeld */,
+				F27B069E2623196800188943 /* Preview Content */,
+			);
+			path = QuickCall;
+			sourceTree = "<group>";
+		};
+		F27B069E2623196800188943 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F27B069F2623196800188943 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F27B06AE2623196800188943 /* QuickCallTests */ = {
+			isa = PBXGroup;
+			children = (
+				F27B06AF2623196800188943 /* QuickCallTests.swift */,
+				F27B06B12623196800188943 /* Info.plist */,
+			);
+			path = QuickCallTests;
+			sourceTree = "<group>";
+		};
+		F27B06B92623196800188943 /* QuickCallUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F27B06BA2623196800188943 /* QuickCallUITests.swift */,
+				F27B06BC2623196800188943 /* Info.plist */,
+			);
+			path = QuickCallUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F27B06942623196700188943 /* QuickCall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F27B06BF2623196800188943 /* Build configuration list for PBXNativeTarget "QuickCall" */;
+			buildPhases = (
+				F27B06912623196700188943 /* Sources */,
+				F27B06922623196700188943 /* Frameworks */,
+				F27B06932623196700188943 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickCall;
+			productName = QuickCall;
+			productReference = F27B06952623196700188943 /* QuickCall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F27B06AA2623196800188943 /* QuickCallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F27B06C22623196800188943 /* Build configuration list for PBXNativeTarget "QuickCallTests" */;
+			buildPhases = (
+				F27B06A72623196800188943 /* Sources */,
+				F27B06A82623196800188943 /* Frameworks */,
+				F27B06A92623196800188943 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F27B06AD2623196800188943 /* PBXTargetDependency */,
+			);
+			name = QuickCallTests;
+			productName = QuickCallTests;
+			productReference = F27B06AB2623196800188943 /* QuickCallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F27B06B52623196800188943 /* QuickCallUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F27B06C52623196800188943 /* Build configuration list for PBXNativeTarget "QuickCallUITests" */;
+			buildPhases = (
+				F27B06B22623196800188943 /* Sources */,
+				F27B06B32623196800188943 /* Frameworks */,
+				F27B06B42623196800188943 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F27B06B82623196800188943 /* PBXTargetDependency */,
+			);
+			name = QuickCallUITests;
+			productName = QuickCallUITests;
+			productReference = F27B06B62623196800188943 /* QuickCallUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F27B068D2623196700188943 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					F27B06942623196700188943 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					F27B06AA2623196800188943 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = F27B06942623196700188943;
+					};
+					F27B06B52623196800188943 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = F27B06942623196700188943;
+					};
+				};
+			};
+			buildConfigurationList = F27B06902623196700188943 /* Build configuration list for PBXProject "QuickCall" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F27B068C2623196700188943;
+			productRefGroup = F27B06962623196700188943 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F27B06942623196700188943 /* QuickCall */,
+				F27B06AA2623196800188943 /* QuickCallTests */,
+				F27B06B52623196800188943 /* QuickCallUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F27B06932623196700188943 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F27B06A02623196800188943 /* Preview Assets.xcassets in Resources */,
+				F27B069D2623196800188943 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F27B06A92623196800188943 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F27B06B42623196800188943 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F27B06912623196700188943 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F27B06A22623196800188943 /* Persistence.swift in Sources */,
+				F27B069B2623196700188943 /* ContentView.swift in Sources */,
+				F27B06992623196700188943 /* QuickCallApp.swift in Sources */,
+				F27B06A52623196800188943 /* QuickCall.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F27B06A72623196800188943 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F27B06B02623196800188943 /* QuickCallTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F27B06B22623196800188943 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F27B06BB2623196800188943 /* QuickCallUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F27B06AD2623196800188943 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F27B06942623196700188943 /* QuickCall */;
+			targetProxy = F27B06AC2623196800188943 /* PBXContainerItemProxy */;
+		};
+		F27B06B82623196800188943 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F27B06942623196700188943 /* QuickCall */;
+			targetProxy = F27B06B72623196800188943 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F27B06BD2623196800188943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F27B06BE2623196800188943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F27B06C02623196800188943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"QuickCall/Preview Content\"";
+				DEVELOPMENT_TEAM = 2SCLNZC55V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = QuickCall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OGscompany.QuickCall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F27B06C12623196800188943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"QuickCall/Preview Content\"";
+				DEVELOPMENT_TEAM = 2SCLNZC55V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = QuickCall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OGscompany.QuickCall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F27B06C32623196800188943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SCLNZC55V;
+				INFOPLIST_FILE = QuickCallTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OGscompany.QuickCallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickCall.app/QuickCall";
+			};
+			name = Debug;
+		};
+		F27B06C42623196800188943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SCLNZC55V;
+				INFOPLIST_FILE = QuickCallTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OGscompany.QuickCallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickCall.app/QuickCall";
+			};
+			name = Release;
+		};
+		F27B06C62623196800188943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SCLNZC55V;
+				INFOPLIST_FILE = QuickCallUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OGscompany.QuickCallUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuickCall;
+			};
+			name = Debug;
+		};
+		F27B06C72623196800188943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SCLNZC55V;
+				INFOPLIST_FILE = QuickCallUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OGscompany.QuickCallUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuickCall;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F27B06902623196700188943 /* Build configuration list for PBXProject "QuickCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F27B06BD2623196800188943 /* Debug */,
+				F27B06BE2623196800188943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F27B06BF2623196800188943 /* Build configuration list for PBXNativeTarget "QuickCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F27B06C02623196800188943 /* Debug */,
+				F27B06C12623196800188943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F27B06C22623196800188943 /* Build configuration list for PBXNativeTarget "QuickCallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F27B06C32623196800188943 /* Debug */,
+				F27B06C42623196800188943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F27B06C52623196800188943 /* Build configuration list for PBXNativeTarget "QuickCallUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F27B06C62623196800188943 /* Debug */,
+				F27B06C72623196800188943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F27B06A32623196800188943 /* QuickCall.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F27B06A42623196800188943 /* QuickCall.xcdatamodel */,
+			);
+			currentVersion = F27B06A42623196800188943 /* QuickCall.xcdatamodel */;
+			path = QuickCall.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F27B068D2623196700188943 /* Project object */;
+}
