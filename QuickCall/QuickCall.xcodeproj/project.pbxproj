@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		F27B06992623196700188943 /* QuickCallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B06982623196700188943 /* QuickCallApp.swift */; };
-		F27B069B2623196700188943 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B069A2623196700188943 /* ContentView.swift */; };
+		F27B069B2623196700188943 /* QuickCallVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B069A2623196700188943 /* QuickCallVIew.swift */; };
 		F27B069D2623196800188943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F27B069C2623196800188943 /* Assets.xcassets */; };
 		F27B06A02623196800188943 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F27B069F2623196800188943 /* Preview Assets.xcassets */; };
 		F27B06A22623196800188943 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B06A12623196800188943 /* Persistence.swift */; };
 		F27B06A52623196800188943 /* QuickCall.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F27B06A32623196800188943 /* QuickCall.xcdatamodeld */; };
 		F27B06B02623196800188943 /* QuickCallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B06AF2623196800188943 /* QuickCallTests.swift */; };
 		F27B06BB2623196800188943 /* QuickCallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B06BA2623196800188943 /* QuickCallUITests.swift */; };
+		F27B06D426231CCE00188943 /* QuickCallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B06D326231CCE00188943 /* QuickCallModel.swift */; };
+		F27B06DC26231D8700188943 /* QuickCallWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B06DB26231D8700188943 /* QuickCallWidgetBundle.swift */; };
+		F27B06E426231DA000188943 /* QuickCallMainWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B06E326231DA000188943 /* QuickCallMainWidget.swift */; };
+		F27B06E926231E1D00188943 /* QuickCallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B06E826231E1D00188943 /* QuickCallWidgetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,7 @@
 /* Begin PBXFileReference section */
 		F27B06952623196700188943 /* QuickCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27B06982623196700188943 /* QuickCallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCallApp.swift; sourceTree = "<group>"; };
-		F27B069A2623196700188943 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F27B069A2623196700188943 /* QuickCallVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCallVIew.swift; sourceTree = "<group>"; };
 		F27B069C2623196800188943 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F27B069F2623196800188943 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F27B06A12623196800188943 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		F27B06B62623196800188943 /* QuickCallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickCallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27B06BA2623196800188943 /* QuickCallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCallUITests.swift; sourceTree = "<group>"; };
 		F27B06BC2623196800188943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F27B06D326231CCE00188943 /* QuickCallModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCallModel.swift; sourceTree = "<group>"; };
+		F27B06DB26231D8700188943 /* QuickCallWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCallWidgetBundle.swift; sourceTree = "<group>"; };
+		F27B06E326231DA000188943 /* QuickCallMainWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCallMainWidget.swift; sourceTree = "<group>"; };
+		F27B06E826231E1D00188943 /* QuickCallWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCallWidgetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,7 @@
 		F27B068C2623196700188943 = {
 			isa = PBXGroup;
 			children = (
+				F27B06D826231CDB00188943 /* QuickCallWidget */,
 				F27B06972623196700188943 /* QuickCall */,
 				F27B06AE2623196800188943 /* QuickCallTests */,
 				F27B06B92623196800188943 /* QuickCallUITests */,
@@ -99,8 +108,9 @@
 		F27B06972623196700188943 /* QuickCall */ = {
 			isa = PBXGroup;
 			children = (
+				F27B06CF26231C4600188943 /* VIews */,
+				F27B06CE26231C2A00188943 /* Models */,
 				F27B06982623196700188943 /* QuickCallApp.swift */,
-				F27B069A2623196700188943 /* ContentView.swift */,
 				F27B069C2623196800188943 /* Assets.xcassets */,
 				F27B06A12623196800188943 /* Persistence.swift */,
 				F27B06A62623196800188943 /* Info.plist */,
@@ -134,6 +144,48 @@
 				F27B06BC2623196800188943 /* Info.plist */,
 			);
 			path = QuickCallUITests;
+			sourceTree = "<group>";
+		};
+		F27B06CE26231C2A00188943 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F27B06D326231CCE00188943 /* QuickCallModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F27B06CF26231C4600188943 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				F27B069A2623196700188943 /* QuickCallVIew.swift */,
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+		F27B06D826231CDB00188943 /* QuickCallWidget */ = {
+			isa = PBXGroup;
+			children = (
+				F27B06DA26231CF100188943 /* Widgets */,
+				F27B06D926231CEB00188943 /* Views */,
+				F27B06DB26231D8700188943 /* QuickCallWidgetBundle.swift */,
+			);
+			path = QuickCallWidget;
+			sourceTree = "<group>";
+		};
+		F27B06D926231CEB00188943 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F27B06E826231E1D00188943 /* QuickCallWidgetView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F27B06DA26231CF100188943 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				F27B06E326231DA000188943 /* QuickCallMainWidget.swift */,
+			);
+			path = Widgets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +318,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F27B06A22623196800188943 /* Persistence.swift in Sources */,
-				F27B069B2623196700188943 /* ContentView.swift in Sources */,
+				F27B06DC26231D8700188943 /* QuickCallWidgetBundle.swift in Sources */,
+				F27B069B2623196700188943 /* QuickCallVIew.swift in Sources */,
+				F27B06D426231CCE00188943 /* QuickCallModel.swift in Sources */,
+				F27B06E926231E1D00188943 /* QuickCallWidgetView.swift in Sources */,
 				F27B06992623196700188943 /* QuickCallApp.swift in Sources */,
 				F27B06A52623196800188943 /* QuickCall.xcdatamodeld in Sources */,
+				F27B06E426231DA000188943 /* QuickCallMainWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
