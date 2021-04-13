@@ -23,6 +23,9 @@
 		F27C1683262587A800A1338E /* QuickCallWIdgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F27C1678262587A800A1338E /* QuickCallWIdgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F27C168F262587F900A1338E /* SelectContactIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F27C168E262587F900A1338E /* SelectContactIntent.intentdefinition */; };
 		F27C16A526258B2300A1338E /* QuickCallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27C16A426258B2300A1338E /* QuickCallWidgetView.swift */; };
+		F27C16C226258F2E00A1338E /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27C16C126258F2E00A1338E /* Intents.framework */; };
+		F27C16C526258F2E00A1338E /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27C16C426258F2E00A1338E /* IntentHandler.swift */; };
+		F27C16C926258F2E00A1338E /* QuickCallIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F27C16C026258F2E00A1338E /* QuickCallIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,13 @@
 			remoteGlobalIDString = F27C1677262587A800A1338E;
 			remoteInfo = QuickCallWIdgetExtension;
 		};
+		F27C16C726258F2E00A1338E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F27B068D2623196700188943 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F27C16BF26258F2E00A1338E;
+			remoteInfo = QuickCallIntent;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +66,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				F27C16C926258F2E00A1338E /* QuickCallIntent.appex in Embed App Extensions */,
 				F27C1683262587A800A1338E /* QuickCallWIdgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -87,6 +98,10 @@
 		F27C1680262587A800A1338E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F27C168E262587F900A1338E /* SelectContactIntent.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SelectContactIntent.intentdefinition; sourceTree = "<group>"; };
 		F27C16A426258B2300A1338E /* QuickCallWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuickCallWidgetView.swift; path = QuickCallWidget/QuickCallWidgetView.swift; sourceTree = SOURCE_ROOT; };
+		F27C16C026258F2E00A1338E /* QuickCallIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QuickCallIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F27C16C126258F2E00A1338E /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		F27C16C426258F2E00A1338E /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		F27C16C626258F2E00A1338E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +135,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F27C16BD26258F2E00A1338E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F27C16C226258F2E00A1338E /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -130,6 +153,7 @@
 				F27B06AE2623196800188943 /* QuickCallTests */,
 				F27B06B92623196800188943 /* QuickCallUITests */,
 				F27C167B262587A800A1338E /* QuickCallWIdget */,
+				F27C16C326258F2E00A1338E /* QuickCallIntent */,
 				F27C1626262584B300A1338E /* Frameworks */,
 				F27B06962623196700188943 /* Products */,
 			);
@@ -142,6 +166,7 @@
 				F27B06AB2623196800188943 /* QuickCallTests.xctest */,
 				F27B06B62623196800188943 /* QuickCallUITests.xctest */,
 				F27C1678262587A800A1338E /* QuickCallWIdgetExtension.appex */,
+				F27C16C026258F2E00A1338E /* QuickCallIntent.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,6 +234,7 @@
 			children = (
 				F27C1627262584B300A1338E /* WidgetKit.framework */,
 				F27C1629262584B300A1338E /* SwiftUI.framework */,
+				F27C16C126258F2E00A1338E /* Intents.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -232,6 +258,15 @@
 			path = Intents;
 			sourceTree = "<group>";
 		};
+		F27C16C326258F2E00A1338E /* QuickCallIntent */ = {
+			isa = PBXGroup;
+			children = (
+				F27C16C426258F2E00A1338E /* IntentHandler.swift */,
+				F27C16C626258F2E00A1338E /* Info.plist */,
+			);
+			path = QuickCallIntent;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -248,6 +283,7 @@
 			);
 			dependencies = (
 				F27C1682262587A800A1338E /* PBXTargetDependency */,
+				F27C16C826258F2E00A1338E /* PBXTargetDependency */,
 			);
 			name = QuickCall;
 			productName = QuickCall;
@@ -307,6 +343,23 @@
 			productReference = F27C1678262587A800A1338E /* QuickCallWIdgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		F27C16BF26258F2E00A1338E /* QuickCallIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F27C16CA26258F2E00A1338E /* Build configuration list for PBXNativeTarget "QuickCallIntent" */;
+			buildPhases = (
+				F27C16BC26258F2E00A1338E /* Sources */,
+				F27C16BD26258F2E00A1338E /* Frameworks */,
+				F27C16BE26258F2E00A1338E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickCallIntent;
+			productName = QuickCallIntent;
+			productReference = F27C16C026258F2E00A1338E /* QuickCallIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -330,6 +383,9 @@
 					F27C1677262587A800A1338E = {
 						CreatedOnToolsVersion = 12.3;
 					};
+					F27C16BF26258F2E00A1338E = {
+						CreatedOnToolsVersion = 12.3;
+					};
 				};
 			};
 			buildConfigurationList = F27B06902623196700188943 /* Build configuration list for PBXProject "QuickCall" */;
@@ -349,6 +405,7 @@
 				F27B06AA2623196800188943 /* QuickCallTests */,
 				F27B06B52623196800188943 /* QuickCallUITests */,
 				F27C1677262587A800A1338E /* QuickCallWIdgetExtension */,
+				F27C16BF26258F2E00A1338E /* QuickCallIntent */,
 			);
 		};
 /* End PBXProject section */
@@ -382,6 +439,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F27C167F262587A800A1338E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F27C16BE26258F2E00A1338E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +490,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F27C16BC26258F2E00A1338E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F27C16C526258F2E00A1338E /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -443,6 +515,11 @@
 			isa = PBXTargetDependency;
 			target = F27C1677262587A800A1338E /* QuickCallWIdgetExtension */;
 			targetProxy = F27C1681262587A800A1338E /* PBXContainerItemProxy */;
+		};
+		F27C16C826258F2E00A1338E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F27C16BF26258F2E00A1338E /* QuickCallIntent */;
+			targetProxy = F27C16C726258F2E00A1338E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -735,6 +812,44 @@
 			};
 			name = Release;
 		};
+		F27C16CB26258F2E00A1338E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SCLNZC55V;
+				INFOPLIST_FILE = QuickCallIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OGscompany.QuickCall.QuickCallIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F27C16CC26258F2E00A1338E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SCLNZC55V;
+				INFOPLIST_FILE = QuickCallIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OGscompany.QuickCall.QuickCallIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -779,6 +894,15 @@
 			buildConfigurations = (
 				F27C1685262587A800A1338E /* Debug */,
 				F27C1686262587A800A1338E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F27C16CA26258F2E00A1338E /* Build configuration list for PBXNativeTarget "QuickCallIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F27C16CB26258F2E00A1338E /* Debug */,
+				F27C16CC26258F2E00A1338E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
