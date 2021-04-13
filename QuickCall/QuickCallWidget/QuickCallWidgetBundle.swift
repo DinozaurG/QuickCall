@@ -13,6 +13,6 @@ struct EmojiWidgetBundle: WidgetBundle {
 
   @WidgetBundleBuilder
   var body: some Widget {
-    QuickCallMainWidget()
+    QuickCallWIdget()
   }
 }
