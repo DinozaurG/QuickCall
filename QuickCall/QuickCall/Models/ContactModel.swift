@@ -6,9 +6,3 @@
 //
 
 import Foundation
-import UIKit
-public struct Contact {
-    public let name: String
-    public let number: String
-    public let image: UIImage
-}
