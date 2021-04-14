@@ -23,7 +23,6 @@
 		F27C1683262587A800A1338E /* QuickCallWIdgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F27C1678262587A800A1338E /* QuickCallWIdgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F27C168F262587F900A1338E /* SelectContactIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F27C168E262587F900A1338E /* SelectContactIntent.intentdefinition */; };
 		F27C16A526258B2300A1338E /* QuickCallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27C16A426258B2300A1338E /* QuickCallWidgetView.swift */; };
-		F27C16C226258F2E00A1338E /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27C16C126258F2E00A1338E /* Intents.framework */; };
 		F27C16C526258F2E00A1338E /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27C16C426258F2E00A1338E /* IntentHandler.swift */; };
 		F27C16C926258F2E00A1338E /* QuickCallIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F27C16C026258F2E00A1338E /* QuickCallIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -139,7 +138,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F27C16C226258F2E00A1338E /* Intents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,16 +17,16 @@ class IntentHandler: INExtension {
     }
     
 }
-extension IntentHandler: SelectContactIntentHandling {
-    func provideContactOptionsCollection(
-      for intent: SelectContactIntent,
-      with completion: @escaping (INObjectCollection<Contact>?, Error?) -> Void
-    ) {
+//extension IntentHandler: SelectContactIntentHandling {
+//    func provideContactOptionsCollection(
+//      for intent: SelectContactIntent,
+//      with completion: @escaping (INObjectCollection<Contact>?, Error?) -> Void
+//    ) {
       /*var emojiItems = [Contact]()
       EmojiProvider.all().forEach { emojiDetails in
         let emojiIntentObject =
           EmojiINO(identifier: emojiDetails.id, display: "\(emojiDetails.emoji) \(emojiDetails.name)")
         emojiItems.append(emojiIntentObject)*/
-      }
+//      }
       //completion(INObjectCollection(items: emojiItems), nil)
-}
+//}
