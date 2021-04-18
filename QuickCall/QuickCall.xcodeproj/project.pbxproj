@@ -16,6 +16,8 @@
 		F27B06B02623196800188943 /* QuickCallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B06AF2623196800188943 /* QuickCallTests.swift */; };
 		F27B06BB2623196800188943 /* QuickCallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B06BA2623196800188943 /* QuickCallUITests.swift */; };
 		F27C170326259A5800A1338E /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27C170226259A5800A1338E /* ContactModel.swift */; };
+		F27D0DE9262ACC5E00D93B6D /* UsefulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D0DE8262ACC5E00D93B6D /* UsefulView.swift */; };
+		F27EA039262C1E4900A9DE34 /* QuickCallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27EA038262C1E4900A9DE34 /* QuickCallViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		F27B06BA2623196800188943 /* QuickCallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCallUITests.swift; sourceTree = "<group>"; };
 		F27B06BC2623196800188943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F27C170226259A5800A1338E /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		F27D0DE8262ACC5E00D93B6D /* UsefulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsefulView.swift; sourceTree = "<group>"; };
+		F27EA038262C1E4900A9DE34 /* QuickCallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCallViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +105,9 @@
 		F27B06972623196700188943 /* QuickCall */ = {
 			isa = PBXGroup;
 			children = (
-				F27C170126259A3900A1338E /* Views */,
 				F27C170026259A3200A1338E /* Models */,
+				F27EA037262C1E2400A9DE34 /* ViewModels */,
+				F27C170126259A3900A1338E /* Views */,
 				F27B06982623196700188943 /* QuickCallApp.swift */,
 				F27B069C2623196800188943 /* Assets.xcassets */,
 				F27B06A12623196800188943 /* Persistence.swift */,
@@ -151,8 +156,17 @@
 			isa = PBXGroup;
 			children = (
 				F27B069A2623196700188943 /* SettingsView.swift */,
+				F27D0DE8262ACC5E00D93B6D /* UsefulView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F27EA037262C1E2400A9DE34 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F27EA038262C1E4900A9DE34 /* QuickCallViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,9 +300,11 @@
 			files = (
 				F27B06A22623196800188943 /* Persistence.swift in Sources */,
 				F27B069B2623196700188943 /* SettingsView.swift in Sources */,
+				F27D0DE9262ACC5E00D93B6D /* UsefulView.swift in Sources */,
 				F27B06992623196700188943 /* QuickCallApp.swift in Sources */,
 				F27C170326259A5800A1338E /* ContactModel.swift in Sources */,
 				F27B06A52623196800188943 /* QuickCall.xcdatamodeld in Sources */,
+				F27EA039262C1E4900A9DE34 /* QuickCallViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

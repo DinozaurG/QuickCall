@@ -14,7 +14,6 @@ struct QuickCallApp: App {
     var body: some Scene {
         WindowGroup {
             SettingsView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
