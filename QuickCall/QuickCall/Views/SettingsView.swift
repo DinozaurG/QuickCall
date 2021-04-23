@@ -12,19 +12,20 @@ import CoreData
 struct SettingsView: View {
     var body: some View {
         VStack(spacing: -40) {
-            ForEach(0..<3) { index in
-                ButtonsView()
-            }.padding()
+            ButtonsView(ButtonTitle: "Contacts").padding()
+            ButtonsView(ButtonTitle: "Synchonize").padding()
+            ButtonsView(ButtonTitle: "Connect to your Social Network").padding()
         }
     }
 }
 
 struct ButtonsView: View {
+    var ButtonTitle: String
     var body: some View {
         ZStack() {
             RoundedRectangle(cornerRadius: 25.0).fill(Color.white)
             RoundedRectangle(cornerRadius: 25.0).stroke(lineWidth: 3).foregroundColor(.yellow)
-            Text("Contacts")
+            Text(ButtonTitle)
         }
     }
 }

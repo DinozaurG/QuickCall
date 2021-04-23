@@ -7,10 +7,19 @@
 
 import SwiftUI
 
-class QuickCallViewModel {
-    private(set) var model: Contacts
+//class QuickCallViewModel {
+//    private(set) var model: Contacts = launchSettings()
     
-    func chooseContact() {
+//    static func launchSettings -> Contacts {
+//        var newModel: Contacts
+//        return newModel
+//    }
+//
+//    var contacts: Array<Contacts.Contact> {
+//         model.contacts
+//    }
+//
+//    func chooseContact() {
         
-    }
-}
+//    }
+//}

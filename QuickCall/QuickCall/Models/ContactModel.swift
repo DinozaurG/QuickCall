@@ -7,12 +7,17 @@
 
 import Foundation
 import UIKit
+
 struct Contacts {
-    var contacts: Contact
+    var contacts: Array<Contact>
     
     struct Contact {
         public let name: String
         public let number: String
         public let image: UIImage
     }
+    
+//    init() {
+//    
+//    }
 }
