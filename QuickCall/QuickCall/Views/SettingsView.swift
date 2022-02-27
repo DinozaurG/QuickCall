@@ -6,14 +6,20 @@
 //
 
 import SwiftUI
-import ContactsUI
-import CoreData
 
 struct SettingsView: View {
+    @EnvironmentObject var viewRouter: ViewRouter
+    var viewModel: QuickCallViewModel
     var body: some View {
         VStack(spacing: -40) {
-            ButtonsView(ButtonTitle: "Contacts").padding()
-            ButtonsView(ButtonTitle: "Synchonize").padding()
+            Button(action: {
+                withAnimation {
+                    viewRouter.currentView = .ContactsView
+                }
+            }) {
+                ButtonsView(ButtonTitle: "Contacts").padding()
+            }
+            //ButtonsView(ButtonTitle: "Synchonize").padding()
             ButtonsView(ButtonTitle: "Connect to your Social Network").padding()
         }
     }
@@ -31,6 +37,7 @@ struct ButtonsView: View {
 }
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView()
+        let previewViewModel = QuickCallViewModel()
+        SettingsView(viewModel: previewViewModel).environmentObject(ViewRouter())
     }
 }

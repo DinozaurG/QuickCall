@@ -9,11 +9,12 @@ import SwiftUI
 
 @main
 struct QuickCallApp: App {
+    @StateObject var viewRouter = ViewRouter()
     let persistenceController = PersistenceController.shared
-
+    let quickCallViewModel = QuickCallViewModel()
     var body: some Scene {
         WindowGroup {
-            SettingsView()
+            QuickCallView(viewModel: quickCallViewModel).environmentObject(viewRouter)
         }
     }
 }

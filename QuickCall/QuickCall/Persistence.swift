@@ -14,8 +14,10 @@ struct PersistenceController {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+            let newItem = ContactEntity(context: viewContext)
+            newItem.id = "0"
+            newItem.name = "DefaultName"
+            newItem.number = "+79234434521"
         }
         do {
             try viewContext.save()
